@@ -5,11 +5,11 @@ from characters.character import PlayerCharacter
 
 
 def _greater_value(initial_body, initial_mind, initial_spirit):
-    if initial_body > initial_mind and initial_body > initial_spirit:
-        return "body"
-    elif initial_mind > initial_spirit:
+    if initial_spirit > initial_mind and initial_spirit > initial_body:
+        return "spirit"
+    elif initial_mind > initial_body:
         return "mind"
-    return "Spirit"
+    return "body"
 
 
 def _get_better_for_body():
