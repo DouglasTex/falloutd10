@@ -78,11 +78,13 @@ def _get_better_for_spirit():
 
     # choose skills
     i = 1
-    while i <= 3:
+    while i <= 2:
         choice = random.choice(skills_for_spirit)
         if choice not in _skills:
             _skills.append(choice)
             i += 1
+    choice = random.choice(skills_for_mind)
+    _skills.append(choice)
 
     return [_skills, _perks]
 
